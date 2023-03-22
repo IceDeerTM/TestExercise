@@ -18,7 +18,6 @@ namespace TestExercise
             {
                 config.AddTransient<ILogger, FileLogger>();
                 config.AddTransient<IPrintService, ConsolePrintService>();
-                //config.AddTransient<IConfiguration>((provider) => context.Configuration);
 
                 config.AddTransient<NumberPrinter>();
             });
